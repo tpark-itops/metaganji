@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+</head>
+<script src="js/lunar.js"></script> 
+
+<body onload="input_start()">
+<body>
+ 
+  	<section>
+		<h2 style="color: 32A80F" align="Center">  
+         Meta Ganji : Find your Ganji matching your birth day - Option 1
+        <br> <br> </h2> 
+		<Form>
+		<p align="Center"> <b> Enter your birth day: </b> 
+			<input type="date" id="dateBirth" min="1800-01-01" max="2100-12-31" required> 
+			<br><br>
+			Input Range : <b>1/1/1800 ~ 12/31/2100</b>
+			<br> <br> 
+		</p>
+		</form>
+		<p align="Center">		
+		<button type="button" onclick="match()"> Find the matching Ganji </button> 
+		<button type="button" onclick="reset()"> Reset </button>
+		</center>
+	  <h3 style="color:32A80F" id="result" align="center"></p> 
+	  <br>
+	
+	</section>
+	
+	<hr align="center" width="80%">
+	
+	<section>
+			
+		<h2 style="color: 32A80F" align="Center">  
+         Meta Ganji : Find your Ganji matching your birth day - Option 2
+        <br> </h2> 
+		<p align="Center"> 	
+			<b> Enter your birth day: </b> 
+			<input type="number" id="db_mm" chk="please enter the 2 digit month" onkeypress="if(event.keyCode == 13) this.form.d.focus()" max="12" min="1" /> /
+			<input type="number" id="db_dd" chk="please enter the 2 digit day of the month" onkeypress="if(event.keyCode == 13) goSolarToLunar()" max="31" min="1" /> /
+			<input type="number" id="db_yyyy" chk="please enter the 4 digit year)" onkeypress="if(event.keyCode == 13) this.form.m.focus()" max="2100" min="1800" maxlength="4" />
+			<br><br>
+			Input Range : <b>1/1/1800 ~ 12/31/2100</b>	
+			<br> <br> 
+			<button type="button" onclick="match2()"> Find the matching Ganji </button>
+			<button type="button" onclick="reset2()"> Reset </button>			
+
+		</p>
+		<h3 id="result2" align="center"></h3> 
+		
+	</section>		
+		  
+</body>  
+
+
+</body>
+</html>
